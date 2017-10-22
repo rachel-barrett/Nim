@@ -52,8 +52,11 @@ def main():
 
     DISPLAYSURF.fill(BGCOLOUR)
     draw_board(board,None)
+    #BASICFONT = pygame.font.Font('freesansbold.ttf', 20)
+    #DISPLAYSURF.blit(BASICFONT.render('Do you want to go first or second?',True,(0,0,0)),(0,0))
     pygame.display.update()
-    yourturn = easygui.ynbox("do you want to go first or second?","First or second?",("First","Second"))
+    #yourturn = easygui.ynbox('do you want to go first or second?','First or second?',('First','Second')) #problematic line
+    yourturn = True
 
     # Main game loop
     while True:
