@@ -1,4 +1,4 @@
-This  is a GUI implementation of the mathematical strategy game [Nim](https://en.wikipedia.org/wiki/Nim), written in python using the pygame module. 
+This  is a GUI implementation of the mathematical strategy game [Nim](https://en.wikipedia.org/wiki/Nim), written in python using the pygame module. The styling was influenced was influenced by Nrich's resource [Drips](https://nrich.maths.org/11818).
 
 You play against the computer, taking it in turns to remove as many counters as you like from one column only; the aim is to take the last counter.
 

@@ -7,6 +7,5 @@ $ virtualenv sandbox # create sandbox
 $ source sandbox/bin/activate # activate sandbox
 $ pip install -r requirements.txt # install dependencies into sandbox
 $ python Nim.py # run program (in sandbox environment)
-$ deactivate; rm -r sandbox # cleanup
 ```
 Once you have finished and want to remove the program from your system, you can simply remove the directory nim-py.

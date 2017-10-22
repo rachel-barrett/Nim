@@ -1,4 +1,4 @@
-# Drips
+# Nim
 # By Rachel Barrett
 
 # Importing necessary python modules
@@ -9,7 +9,7 @@ from pygame.locals import *
 # Constants in the program. Useful as it collects together settings which are arbitrary.
 
 FPS = 30
-CAPTION = 'Drips'
+CAPTION = 'Nim'
 
 WHITE = (255,255,255)
 BLUE = (0,128,225)
