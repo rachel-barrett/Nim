@@ -1,0 +1,1 @@
+Think of alternative to easygui - easygui message box has had to be disabled because program fails in some environments
