@@ -138,13 +138,13 @@ def optimal_move(board):
     h = 0
     
     while remaindersum != 0:
-        row = map(lambda x: x%2,remainder)
+        row = [x%2 for x in remainder]
         binaryboard.append(row)
         rowsum = sum(row) % 2
         if rowsum == 1:
             h = n
         rowsums.append(rowsum)
-        remainder = [(x-y)/2 for x,y in zip(remainder, row)]
+        remainder = [(x-y)//2 for x,y in zip(remainder, row)]
         remaindersum = sum(remainder)
         n += 1
 
@@ -165,7 +165,7 @@ def optimal_move(board):
         for i in range(h+1):
             binaryboard[i][col] = (binaryboard[i][col] + rowsums[i]) % 2
 
-        newboard = map(lambda x: int(x,2), map(lambda x: ''.join(map(str,x[::-1])), map(list,zip(*binaryboard))))    
+        newboard = [int(x,2) for x in [''.join(map(str,x[::-1])) for x in list(map(list,list(zip(*binaryboard))))]]    
 
     return newboard
 

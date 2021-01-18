@@ -1,2 +1,2 @@
-pygame==1.9.3
+pygame==2.0.1
 easygui==0.98.1
